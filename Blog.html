@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSPI Pune</title>
+  <!-- Swiper CSS -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Navbar */
+    .top-bar {
+      background-color: #0d2811;
+      color: #fff;
+      padding: 5px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .top-bar a {
+      color: #ecb439;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #0d2811;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .nav-links a.active {
+      color: #ecb439;
+    }
+
+    /* Banner Section */
+    .about-banner {
+      background: url('/transparent.png') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .about-banner h1 {
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    .breadcrumb {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .breadcrumb span {
+      color: #ecb439;
+    }
+
+  .read-btn:hover {
+  background-color: #ecb439;
+  color: white;
+  transition: 0.3s;
+}
+
+.blog-img {
+  position: relative;
+  overflow: hidden;
+}
+.blog-img img {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  height: 294px;
+  object-fit: cover;
+ 
+}
+
+.blog-img::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  transform: scale(0, 0);
+  transform-origin: center center;
+  transition: transform 0.5s cubic-bezier(.4,0,.2,1);
+  z-index: 1;
+}
+
+.blog-img:hover::after {
+  transform: scale(1, 1);
+}
+.blog-img i {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:28px;
+  color: #ecb439;
+  z-index: 2; /* Above overlay */
+  pointer-events: none;
+    opacity: 0; /* Initially hidden */
+   transition: opacity 0.3s;
+}
+.blog-img:hover i {
+  opacity: 1;           /* Show on hover */
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.gallery-item img{
+  height: 350px;
+  object-fit: cover;
+}
+.gallery-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  opacity: 0;
+  transition: 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.gallery-item:hover .overlay {
+  opacity: 8;
+}
+.overlay-content {
+  padding: 20px;
+}
+.overlay-content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.overlay-content p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.overlay-content a {
+  background-color: #ecb439;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.pagination .page {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: black;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.pagination .page.active {
+  border-color: #ecb439;
+  color: #ecb439;
+}
+.pagination .page:hover {
+  background-color: #ecb439;
+  color: white;
+  transition: 0.3s;
+}
+
+   </style>
+</head>
+<body>
+<header>
+    <div class="header-left">
+         <i class="fa-solid fa-graduation-cap" style="color: #ecb439;"></i> Welcome To SSPI
+    </div>
+    <div class="header-right">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-google"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="apply-btn">Contact Now</a>
+    </div>
+  </header>
+
+   <nav>
+    <div style="color: white; font-size: 24px; font-weight: bold;">
+     <img src="/ChatGPT Image Jul 16, 2025, 11_11_29 AM.png"width="70" height="70" alt="SSPI Logo">
+    </div>
+    <div class="nav-links">
+      <a href="index.html" >HOME</a>
+      <a href="About.html">ABOUT US</a>
+      <a href="Team.html">TEAM</a>
+      <a href="Blog.html" class="active">BLOG</a>
+      <a href="Contact.html">CONTACT</a>
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+  </nav>
+  <!-- Banner Section -->
+  <div class="about-banner">
+    <h1>BLOG</h1>
+    <div class="breadcrumb">Home <span>//</span> BLOG</div>
+  </div>
+
+  <section style="padding: 80px 0; background: #fff;">
+  <div class="container" style="display: flex; gap: 30px; align-items: flex-start;margin-bottom: 20px;">
+    
+    <!-- Blog Image -->
+    <div class="blog-img" style="flex: 1;">
+      <img src="/sainik 4.jpeg" alt="Blog" style="width: 100%; border-radius: 4px;">
+  
+    <i class="fa fa-link" aria-hidden="true"></i>
+    </div>
+
+    <!-- Blog Content -->
+    <div class="blog-content" style="flex: 1;">
+      <ul style="list-style: none; padding: 0; margin: 0 0 10px 0; display: flex; gap: 20px; font-size: 14px; color: #999; ">
+        <li><i class="fa fa-calendar" style="margin-right: 5px;"></i>05 June 2025</li>
+      </ul>
+      
+      <h3 style="font-size: 20px; font-weight: 700; color: #222; margin-bottom: 10px;">
+       SSPI Cadets Selected for Sainik Schools & NDA
+      </h3>
+      
+      <ul style="list-style: none; padding: 0; margin: 0 0 15px 0; display: flex; gap: 20px; font-size: 14px; color: #ecb439;">
+        <li><i class="fa fa-user" style="margin-right: 5px;"></i>Admin</li>
+        <li><i class="fa fa-comments" style="margin-right: 5px;"></i>05</li>
+      </ul>
+      
+      <p style="color: #555; line-height: 1.8; margin-bottom: 20px;">
+       Over 10 students from SSPI Pune cleared national-level exams including Sainik School, RIMC, RMS, and NDA. Our coaching model continues to produce top performers each year.
+      </p>
+      
+      <a href="#" class="read-btn" style="border: 1px solid #ecb439; padding: 10px 20px; color: #000; text-decoration: none; font-weight: 600;">
+        Read More
+      </a>
+    </div>
+
+  </div>
+
+   <div class="container" style="display: flex; gap: 30px; align-items: flex-start;margin-bottom: 20px;">
+    
+    <!-- Blog Image -->
+    <div class="blog-img" style="flex: 1;">
+      <img src="/trekking.jpg" alt="Blog" style="width: 100%; border-radius: 4px;">
+  
+    <i class="fa fa-link" aria-hidden="true"></i>
+    </div>
+
+    <!-- Blog Content -->
+    <div class="blog-content" style="flex: 1;">
+      <ul style="list-style: none; padding: 0; margin: 0 0 10px 0; display: flex; gap: 20px; font-size: 14px; color: #999;">
+        <li><i class="fa fa-calendar" style="margin-right: 5px;"></i>15 June 2025</li>
+      </ul>
+      
+      <h3 style="font-size: 20px; font-weight: 700; color: #222; margin-bottom: 10px;">
+      SSPI Conducts Trekking & Rope-Climbing Activity
+
+      </h3>
+      
+      <ul style="list-style: none; padding: 0; margin: 0 0 15px 0; display: flex; gap: 20px; font-size: 14px; color: #ecb439;">
+        <li><i class="fa fa-user" style="margin-right: 5px;"></i>Admin</li>
+        <li><i class="fa fa-comments" style="margin-right: 5px;"></i>05</li>
+      </ul>
+      
+      <p style="color: #555; line-height: 1.8; margin-bottom: 20px;">
+      Cadets participated in a physically challenging trek and rope course near Sinhgad Fort as part of their outdoor development program
+      </p>
+      
+      <a href="#" class="read-btn" style="border: 1px solid #ecb439; padding: 10px 20px; color: #000; text-decoration: none; font-weight: 600;">
+        Read More
+      </a>
+    </div>
+
+  </div>
+   <div class="container" style="display: flex; gap: 30px; align-items: flex-start;">
+    
+    <!-- Blog Image -->
+    <div class="blog-img" style="flex: 1;">
+      <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg" alt="Blog" style="width: 100%; border-radius: 4px;">
+  
+    <i class="fa fa-link" aria-hidden="true"></i>
+    </div>
+
+    <!-- Blog Content -->
+    <div class="blog-content" style="flex: 1;">
+      <ul style="list-style: none; padding: 0; margin: 0 0 10px 0; display: flex; gap: 20px; font-size: 14px; color: #999;">
+        <li><i class="fa fa-calendar" style="margin-right: 5px;"></i>28 May 2025</li>
+      </ul>
+      
+      <h3 style="font-size: 20px; font-weight: 700; color: #222; margin-bottom: 10px;">
+      Scholarship Exam Results Declared
+      </h3>
+      
+      <ul style="list-style: none; padding: 0; margin: 0 0 15px 0; display: flex; gap: 20px; font-size: 14px; color: #ecb439;">
+        <li><i class="fa fa-user" style="margin-right: 5px;"></i>Admin</li>
+        <li><i class="fa fa-comments" style="margin-right: 5px;"></i>05</li>
+      </ul>
+      
+      <p style="color: #555; line-height: 1.8; margin-bottom: 20px;">
+      Sparsh Wadekar and Parth Namdeo cleared the Maharashtra State Scholarship exam — a proud achievement for our institute
+      </p>
+      
+      <a href="#" class="read-btn" style="border: 1px solid #ecb439; padding: 10px 20px; color: #000; text-decoration: none; font-weight: 600;">
+        Read More
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section style="padding: 80px 0; background: #fff;">
+    <h2 class="section-title"> GALLERY</h2>
+    <div class="underline"></div>
+  <div class="container" style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
+    
+    <!-- Gallery Item 1 -->
+    <div class="gallery-item" id="page1" style="position: relative; overflow: hidden; width: 45%; border-radius: 4px;">
+      <img src="/gal1.jpeg" alt="Gallery" style="width: 100%; display: block;">
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3>Rolling to Refresh</h3>
+          <p>Educational journey beyond the classroom</p>
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery Item 2 -->
+    <div class="gallery-item" id="page2" style="width: 45%;">
+      <img src="/gal2.jpeg" alt="Gallery" style="width: 100%; display: block; border-radius: 4px;">
+    <div class="overlay">
+        <div class="overlay-content">
+          <h3>Scenic Break</h3>
+          <p>A perfect pause to recharge young minds</p>
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Gallery Item 3 -->
+      <div class="gallery-item" id="page3" style="position: relative; overflow: hidden; width: 45%; border-radius: 4px;">
+      <img src="/gal5.jpg" alt="Gallery" style="width: 100%; display: block;">
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3>Beyond Books</h3>
+          <p>Confidence Building through Adventure</p>
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery Item 2 -->
+    <div class="gallery-item" id="page4" style="width: 45%;">
+      <img src="/gal3.jpeg" alt="Gallery" style="width: 100%; display: block; border-radius: 4px;">
+    <div class="overlay">
+        <div class="overlay-content">
+          <h3>Focused Learning</h3>
+          <p>Guided by NDA experts</p>
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+
+     <div class="gallery-item" id="page5" style="position: relative; overflow: hidden; width: 45%; border-radius: 4px;">
+      <img src="/gal4.jpeg" alt="Gallery" style="width: 100%; display: block;">
+      <div class="overlay">
+        <div class="overlay-content">
+          <h3>Captured Moments</h3>
+          <p>Picnic memories made to last forever</p>
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery Item 2 -->
+    <div class="gallery-item" id="page6" style="width: 45%;">
+      <img src="/parade-at-rajasthan-defence-scaled.webp" alt="Gallery" style="width: 100%; display: block; border-radius: 4px;">
+    <div class="overlay">
+        <div class="overlay-content">
+          <h3>Cadet Parade Practice</h3>
+          <p>Training for Future Armed Forces</p>
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+
+   
+   
+
+     
+  
+
+
+  </div>
+
+  <!-- Pagination -->
+  <div class="pagination" style="text-align: center; margin-top: 40px;margin-left: 500px;">
+    <ul style="list-style: none; padding: 0; display: inline-flex; gap: 10px;">
+      <li><a href="#" class="page">&lt;</a></li>
+      <li><a href="#page1" class="page active">1</a></li>
+      <li><a href="#page2" class="page">2</a></li>
+      <li><span class="page">...</span></li>
+      <li><a href="#" class="page">5</a></li>
+      <li><a href="#" class="page">&gt;</a></li>
+    </ul>
+  </div>
+</section>
+
+
+<footer class="main-footer">
+  
+  <div class="contact-box">
+    <div class="contact-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <h4>Address</h4>
+      <p>201 & 202 B-Wing Near Bank of India<br>
+Ahire Gate,NDA Road, Pune-23</p>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-phone-alt"></i>
+      <h4>Phone Number</h4>
+      <p>7972794429<br>9960445993</p>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <h4>Email Address</h4>
+      <p>sampat_wadekar@yahoo.com<br>www.sspipune.com</p>
+    </div>
+  </div>
+
+  <!-- Main Footer Content -->
+  <div class="footer-content">
+    <div class="footer-column about">
+      <div class="logo"><img src="/ChatGPT Image Jul 16, 2025, 11_11_29 AM.png" width="120px" height="120px"></div>
+      <!--<div class="logo"><i class="fas fa-graduation-cap"></i> <span>Edulearn.</span></div>-->
+      <p>SSPI Pune - Gateway to Army Careers
+      Empowering Young Minds for Defence Careers</p>
+    </div>
+
+    <div class="footer-column posts">
+      <h4>Recent Posts</h4>
+      <div class="post">
+        <div class="date-box">
+          <span class="date">15</span><br><span class="month">June</span>
+        </div>
+        <div class="text">
+          <p>SSPI Conducts Trekking & Rope-Climbing Activity</p>
+         <!-- <small>Keyword Analysis</small>-->
+        </div>
+      </div>
+      <div class="post">
+        <div class="date-box">
+          <span class="date">05</span><br><span class="month">June</span>
+        </div>
+        <div class="text">
+          <p>SSPI Cadets Selected for Sainik Schools & NDA</p>
+          <!--<small>Spoken English</small>-->
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-column sitemap">
+      <h4>Our Sitemap</h4>
+      <ul>
+        <li>Home</li>
+          <li>About</li>
+        <li>Team</li>
+        <li>Blog</li>
+      
+        <li>Contact</li>
+      
+     
+      </ul>
+    </div>
+
+    <div class="footer-column newsletter">
+      <h4>Newsletter</h4>
+      <p>Sign Up to Our Newsletter to Get Latest Updates & Services</p>
+      <form>
+        <input type="email" placeholder="Enter Your Email">
+        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Social Icons & Rights -->
+  <div class="footer-bottom">
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="copyright">
+      © SSPI Pune. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
