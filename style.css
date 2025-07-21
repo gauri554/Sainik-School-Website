@@ -122,7 +122,7 @@
 
 .hero {
   position: relative;
-  background: url('/SAINIK\ SCHOOL\ DR\ WADEKAR17.pdf-image-018.jpg') no-repeat center center/cover;
+  background: url('./assets/SAINIK\ SCHOOL\ DR\ WADEKAR17.pdf-image-018.jpg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -525,7 +525,7 @@ font-size: 10px;
 
   width: 100%;
   min-height: 400px; /* Adjust height based on your content */
-  background-image: url("/transparent.png"); /* Replace with your background image */
+  background-image: url("./assets/transparent.png"); /* Replace with your background image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -917,7 +917,7 @@ body {
   position: relative;*/
   width: 100%;
   min-height: 400px; /* Adjust as needed */
-  background-image: url("/transparent.png"); /* Replace with your image */
+  background-image: url("./assets/transparent.png"); /* Replace with your image */
   background-size: cover;
   background-attachment: fixed; /* Parallax effect */
   background-repeat: no-repeat;
@@ -1232,7 +1232,7 @@ body {
   position: relative;*/
   width: 100%;
   min-height: 400px; /* Adjust based on your design */
-  background-image: url("/transparent.png"); /* Replace with your image */
+  background-image: url("./assets/transparent.png"); /* Replace with your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1486,7 +1486,7 @@ background-color: rgba(14, 13, 13, 0.5);
   padding-top: 150px;*/
 
   width: 100%;
-  background-image: url("/transparent.png"); /* Replace with footer background image */
+  background-image: url("./assets/transparent.png"); /* Replace with footer background image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1677,4 +1677,68 @@ background-color: rgba(14, 13, 13, 0.5);
 .footer-bottom .copyright {
   font-size: 14px;
   color: #ccc;
+}
+
+
+/* Preloader styles */
+#preloader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: #ecb439;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner .fa-spinner  {
+  font-size: 48px;
+  color: white;
+  z-index: 2;
+  animation: book-bounce 0.5s infinite alternate;
+}
+
+.pages {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  gap: 2px;
+}
+
+.page {
+  display: block;
+  width: 6px;
+  height: 40px;
+  background: #ecb439;
+  opacity: 0.2;
+  border-radius: 2px;
+  animation: page-flip 1s infinite;
+}
+
+.page:nth-child(1) { animation-delay: 0s; }
+.page:nth-child(2) { animation-delay: 0.2s; }
+.page:nth-child(3) { animation-delay: 0.4s; }
+.page:nth-child(4) { animation-delay: 0.6s; }
+.page:nth-child(5) { animation-delay: 0.8s; }
+
+@keyframes book-bounce {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.08); }
+}
+
+@keyframes page-flip {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
 }

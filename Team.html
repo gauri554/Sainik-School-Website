@@ -44,7 +44,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     }
 
     nav {
-      background-color: #0d2811;
+    background-color: #0d2811;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -69,7 +69,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
     /* Banner Section */
     .about-banner {
-      background: url('/transparent.png') no-repeat center center/cover;
+      background: url('./assets/transparent.png') no-repeat center center/cover;
       height: 300px;
       display: flex;
       flex-direction: column;
@@ -97,7 +97,22 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
    </style>
 </head>
 <body>
-<header>
+
+  <div id="preloader">
+  <div class="spinner">
+    <i class="fa fa-spinner fa-spin"></i>
+    <div class="pages">
+      <span class="page"></span>
+      <span class="page"></span>
+      <span class="page"></span>
+      <span class="page"></span>
+      <span class="page"></span>
+    </div>
+  </div>
+</div>
+
+
+<header style="border-bottom: 1px solid gray;">
     <div class="header-left">
          <i class="fa-solid fa-graduation-cap" style="color:#ecb439 ;"></i> Welcome To SSPI
     </div>
@@ -112,7 +127,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
    <nav>
     <div style="color: white; font-size: 24px; font-weight: bold;">
-     <img src="/ChatGPT Image Jul 16, 2025, 11_11_29 AM.png"width="70" height="70" alt="SSPI Logo">
+     <img src="./assets/ChatGPT Image Jul 16, 2025, 11_11_29 AM.png"width="70" height="70" alt="SSPI Logo">
     </div>
     <div class="nav-links">
       <a href="index.html">HOME</a>
@@ -121,13 +136,13 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
       <a href="Blog.html">BLOG</a>
       <a href="Contact.html">CONTACT</a>
-      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+    
     </div>
   </nav>
   <!-- Banner Section -->
   <div class="about-banner">
     <h1>TEAM</h1>
-    <div class="breadcrumb">Home <span>//</span> About Us<span>//</span>Team</div>
+    <div class="breadcrumb">Home <span>//</span>Team</div>
   </div>
 
   <section class="staff-section" style="margin-bottom: 100px;">
@@ -138,7 +153,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
     <div class="staff-grid">
       <div class="staff-card">
-        <img src="sampat.png" alt="Staff 1">
+        <img src="./assets/sampat.png" alt="Staff 1">
         <div class="staff-info">
           <h4>Dr. Sampat Wadekar</h4>
          
@@ -159,7 +174,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
       </div>
       <div class="staff-card">
-        <img src="/khanderao.png" alt="Staff 2">
+        <img src="./assets/khanderao.png" alt="Staff 2">
         <div class="staff-info">
           <h4>Dr. Khanderao Gavali</h4>
           <p>Senior Faculty</p>
@@ -178,7 +193,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
         
       </div>
       <div class="staff-card">
-        <img src="/sandeep.png" alt="Staff 3">
+        <img src="./assets/sandeep.png" alt="Staff 3">
         <div class="staff-info">
           <h4>Mr. Sandeep Jagadale</h4>
           <p>Science Faculty</p>
@@ -198,7 +213,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
       </div>
 
        <div class="staff-card">
-        <img src="/priyanka.png" alt="Staff 1">
+        <img src="./assets/priyanka.png" alt="Staff 1">
         <div class="staff-info">
           <h4>Ms. Priyanka Dev</h4>
          
@@ -219,7 +234,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
       </div>
       <div class="staff-card">
-        <img src="/shruti.png" alt="Staff 2">
+        <img src="./assets/shruti.png" alt="Staff 2">
         <div class="staff-info">
           <h4>Ms. Shruti Wadekar</h4>
           <p>Faculty</p>
@@ -239,7 +254,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     </div>
 
      <div class="staff-card">
-        <img src="sanjay.png" alt="Staff 3">
+        <img src="./assets/sanjay.png" alt="Staff 3">
         <div class="staff-info">
           <h4>Mr. Sanjay Mahajan</h4>
           <p> Faculty</p>
@@ -284,7 +299,7 @@ Ahire Gate,NDA Road, Pune-23</p>
   <!-- Main Footer Content -->
   <div class="footer-content">
     <div class="footer-column about">
-      <div class="logo"><img src="/ChatGPT Image Jul 16, 2025, 11_11_29 AM.png" width="120px" height="120px"></div>
+      <div class="logo"><img src="./assets/ChatGPT Image Jul 16, 2025, 11_11_29 AM.png" width="120px" height="120px"></div>
       <!--<div class="logo"><i class="fas fa-graduation-cap"></i> <span>Edulearn.</span></div>-->
       <p>SSPI Pune - Gateway to Army Careers
       Empowering Young Minds for Defence Careers</p>

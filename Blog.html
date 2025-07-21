@@ -69,7 +69,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
     /* Banner Section */
     .about-banner {
-      background: url('/transparent.png') no-repeat center center/cover;
+      background: url('./assets/transparent.png') no-repeat center center/cover;
       height: 300px;
       display: flex;
       flex-direction: column;
@@ -209,7 +209,22 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
    </style>
 </head>
 <body>
-<header>
+
+  <div id="preloader">
+  <div class="spinner">
+    <i class="fa fa-spinner fa-spin"></i>
+    <div class="pages">
+      <span class="page"></span>
+      <span class="page"></span>
+      <span class="page"></span>
+      <span class="page"></span>
+      <span class="page"></span>
+    </div>
+  </div>
+</div>
+
+
+<header style="border-bottom: 1px solid gray;">
     <div class="header-left">
          <i class="fa-solid fa-graduation-cap" style="color: #ecb439;"></i> Welcome To SSPI
     </div>
@@ -224,7 +239,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
    <nav>
     <div style="color: white; font-size: 24px; font-weight: bold;">
-     <img src="/ChatGPT Image Jul 16, 2025, 11_11_29 AM.png"width="70" height="70" alt="SSPI Logo">
+     <img src="./assets/ChatGPT Image Jul 16, 2025, 11_11_29 AM.png"width="70" height="70" alt="SSPI Logo">
     </div>
     <div class="nav-links">
       <a href="index.html" >HOME</a>
@@ -232,7 +247,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
       <a href="Team.html">TEAM</a>
       <a href="Blog.html" class="active">BLOG</a>
       <a href="Contact.html">CONTACT</a>
-      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+    
     </div>
   </nav>
   <!-- Banner Section -->
@@ -246,7 +261,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     
     <!-- Blog Image -->
     <div class="blog-img" style="flex: 1;">
-      <img src="/sainik 4.jpeg" alt="Blog" style="width: 100%; border-radius: 4px;">
+      <img src="./assets/sainik 4.jpeg" alt="Blog" style="width: 100%; border-radius: 4px;">
   
     <i class="fa fa-link" aria-hidden="true"></i>
     </div>
@@ -281,7 +296,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     
     <!-- Blog Image -->
     <div class="blog-img" style="flex: 1;">
-      <img src="/trekking.jpg" alt="Blog" style="width: 100%; border-radius: 4px;">
+      <img src="./assets/trekking.jpg" alt="Blog" style="width: 100%; border-radius: 4px;">
   
     <i class="fa fa-link" aria-hidden="true"></i>
     </div>
@@ -349,14 +364,14 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 </section>
 
 <!-- Gallery Section -->
-<section style="padding: 80px 0; background: #fff;">
+<section style="padding: 80px 0; background: #fff; margin-bottom: 100px;">
     <h2 class="section-title"> GALLERY</h2>
     <div class="underline"></div>
   <div class="container" style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
     
     <!-- Gallery Item 1 -->
     <div class="gallery-item" id="page1" style="position: relative; overflow: hidden; width: 45%; border-radius: 4px;">
-      <img src="/gal1.jpeg" alt="Gallery" style="width: 100%; display: block;">
+      <img src="./assets/gal1.jpeg" alt="Gallery" style="width: 100%; display: block;">
       <div class="overlay">
         <div class="overlay-content">
           <h3>Rolling to Refresh</h3>
@@ -368,7 +383,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
     <!-- Gallery Item 2 -->
     <div class="gallery-item" id="page2" style="width: 45%;">
-      <img src="/gal2.jpeg" alt="Gallery" style="width: 100%; display: block; border-radius: 4px;">
+      <img src="./assets/gal2.jpeg" alt="Gallery" style="width: 100%; display: block; border-radius: 4px;">
     <div class="overlay">
         <div class="overlay-content">
           <h3>Scenic Break</h3>
@@ -381,7 +396,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
     <!-- Gallery Item 3 -->
       <div class="gallery-item" id="page3" style="position: relative; overflow: hidden; width: 45%; border-radius: 4px;">
-      <img src="/gal5.jpg" alt="Gallery" style="width: 100%; display: block;">
+      <img src="./assets/gal5.jpg" alt="Gallery" style="width: 100%; display: block;">
       <div class="overlay">
         <div class="overlay-content">
           <h3>Beyond Books</h3>
@@ -393,7 +408,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
     <!-- Gallery Item 2 -->
     <div class="gallery-item" id="page4" style="width: 45%;">
-      <img src="/gal3.jpeg" alt="Gallery" style="width: 100%; display: block; border-radius: 4px;">
+      <img src="./assets/gal3.jpeg" alt="Gallery" style="width: 100%; display: block; border-radius: 4px;">
     <div class="overlay">
         <div class="overlay-content">
           <h3>Focused Learning</h3>
@@ -404,7 +419,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     </div>
 
      <div class="gallery-item" id="page5" style="position: relative; overflow: hidden; width: 45%; border-radius: 4px;">
-      <img src="/gal4.jpeg" alt="Gallery" style="width: 100%; display: block;">
+      <img src="./assets/gal4.jpeg" alt="Gallery" style="width: 100%; display: block;">
       <div class="overlay">
         <div class="overlay-content">
           <h3>Captured Moments</h3>
@@ -416,7 +431,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
     <!-- Gallery Item 2 -->
     <div class="gallery-item" id="page6" style="width: 45%;">
-      <img src="/parade-at-rajasthan-defence-scaled.webp" alt="Gallery" style="width: 100%; display: block; border-radius: 4px;">
+      <img src="./assets/parade-at-rajasthan-defence-scaled.webp" alt="Gallery" style="width: 100%; display: block; border-radius: 4px;">
     <div class="overlay">
         <div class="overlay-content">
           <h3>Cadet Parade Practice</h3>
@@ -435,7 +450,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
   </div>
 
-  <!-- Pagination -->
+  <!-- Pagination 
   <div class="pagination" style="text-align: center; margin-top: 40px;margin-left: 500px;">
     <ul style="list-style: none; padding: 0; display: inline-flex; gap: 10px;">
       <li><a href="#" class="page">&lt;</a></li>
@@ -445,7 +460,8 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
       <li><a href="#" class="page">5</a></li>
       <li><a href="#" class="page">&gt;</a></li>
     </ul>
-  </div>
+  </div>-->
+ 
 </section>
 
 
@@ -473,7 +489,7 @@ Ahire Gate,NDA Road, Pune-23</p>
   <!-- Main Footer Content -->
   <div class="footer-content">
     <div class="footer-column about">
-      <div class="logo"><img src="/ChatGPT Image Jul 16, 2025, 11_11_29 AM.png" width="120px" height="120px"></div>
+      <div class="logo"><img src="./assets/ChatGPT Image Jul 16, 2025, 11_11_29 AM.png" width="120px" height="120px"></div>
       <!--<div class="logo"><i class="fas fa-graduation-cap"></i> <span>Edulearn.</span></div>-->
       <p>SSPI Pune - Gateway to Army Careers
       Empowering Young Minds for Defence Careers</p>

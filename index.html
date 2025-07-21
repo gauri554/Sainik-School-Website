@@ -19,6 +19,22 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 </head>
 
 <body>
+
+  <!-- Preloader Spinner -->
+<div id="preloader">
+  <div class="spinner">
+    <i class="fa fa-spinner fa-spin"></i>
+    <div class="pages">
+      <span class="page"></span>
+      <span class="page"></span>
+      <span class="page"></span>
+      <span class="page"></span>
+      <span class="page"></span>
+    </div>
+  </div>
+</div>
+
+
   <header>
     <div class="header-left">
       <i class="fa fa-graduation-cap"></i> Welcome to SSPI
@@ -28,7 +44,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-google"></i></a>
         <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="apply-btn">Contact Now</a>
+        <a href="#" class="apply-btn" onclick="window.location.href='contact.html'">Contact Now</a>
     </div>
   </header>
 
@@ -41,7 +57,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     </div> <!-- Empty for spacing -->
   
   <div class="top-logo">
-    <img src="/ChatGPT Image Jul 16, 2025, 11_11_29 AM.png" alt="Edulearn Logo" class="school-logo">
+    <img src="./assets/ChatGPT Image Jul 16, 2025, 11_11_29 AM.png" alt="Edulearn Logo" class="school-logo">
   
   </div>
   
@@ -69,7 +85,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     <h1>WELCOME TO SSPI Pune</h1>
     <p>Gateway to Army <br>Empowering Young Minds for Defence Careers</p>
     <div class="btns">
-      <button class="read btn-cart ">READ MORE</button> 
+      <button class="read btn-cart " onclick="window.location.href='index.html'">READ MORE</button> 
       <button class="start btn-cart ">GET STARTED NOW</button>
     </div>
  
@@ -104,7 +120,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
   <div class="about-us-content">
     <div class="about-image">
-      <img src="/SAINIK SCHOOL DR WADEKAR17.pdf-image-049.jpg" height="340px" alt="Students">
+      <img src="./assets/SAINIK SCHOOL DR WADEKAR17.pdf-image-049.jpg" height="340px" alt="Students">
       <div class="play-button"><i class="fa fa-play"></i></div>
     </div>
 
@@ -145,7 +161,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     <!-- Course 1 -->
     <div class="course-card">
       <div class="course-img">
-        <img src="/sainik 4.jpeg" alt="Electrical Engineering" />
+        <img src="/assets/sainik 4.jpeg" alt="Electrical Engineering" />
       
         <span class="price">₹1,60,000</span>
       </div>
@@ -163,7 +179,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     <!-- Course 2 -->
     <div class="course-card">
       <div class="course-img">
-        <img src="/parade-at-rajasthan-defence-scaled.webp" alt="Computer Engineering" />
+        <img src="./assets/parade-at-rajasthan-defence-scaled.webp" alt="Computer Engineering" />
         <span class="price"> ₹1,80,000</span>
       </div>
       <div class="course-info">
@@ -180,7 +196,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     <!-- Course 3 -->
     <div class="course-card">
       <div class="course-img">
-        <img src="/Pic2129N.jpeg" alt="Civil Engineering" />
+        <img src="./assets/Pic2129N.jpeg" alt="Civil Engineering" />
         <span class="price"> Included</span>
       </div>
       <div class="course-info">
@@ -210,7 +226,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
     <div class="achieve-content">
       <div class="achieve-image">
-        <img src="/achievements.jpeg" alt="Graduates" height="350" />
+        <img src="./assets/achievements.jpeg" alt="Graduates" height="350" />
       </div>
       <div class="achieve-stats">
         <div class="stat-box">
@@ -241,7 +257,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 
     <div class="events-grid">
       <div class="event-card">
-        <img src="/trekking.jpg" alt="Practice Workshop">
+        <img src="./assets/trekking.jpg" alt="Practice Workshop">
         <i class="fa fa-star event-icon"></i>
         <div class="event-info">
         <!---<p class="date"><i class="fa fa-calendar"></i> 28 June 2017</p>-->
@@ -255,7 +271,7 @@ Trekking & Rope Climbing</h3>
 
       <div class="event-card">
       
-      <img src="/horseriding.webp" alt="Examination Room">
+      <img src="./assets/horseriding.webp" alt="Examination Room">
       <i class="fa fa-star event-icon"></i>
       <div class="event-info">
         <!-- <p class="date"><i class="fa fa-calendar"></i> 28 April 2017</p>-->
@@ -267,7 +283,7 @@ Trekking & Rope Climbing</h3>
       </div>
 
       <div class="event-card">
-        <img src="/workshop.jpeg" alt="Graduation">
+        <img src="./assets/workshop.jpeg" alt="Graduation">
      <i class="fa fa-star event-icon"></i>
         <div class="event-info">
         <!--  <p class="date"><i class="fa fa-calendar"></i> 28 June 2017</p>-->
@@ -289,7 +305,7 @@ Trekking & Rope Climbing</h3>
 
     <div class="staff-grid">
       <div class="staff-card">
-        <img src="/sampat.png" alt="Staff 1">
+        <img src="./assets/sampat.png" alt="Staff 1">
         <div class="staff-info">
           <h4>Dr. Sampat Wadekar</h4>
          
@@ -310,7 +326,7 @@ Trekking & Rope Climbing</h3>
 
       </div>
       <div class="staff-card">
-        <img src="/khanderao.png" alt="Staff 2">
+        <img src="./assets/khanderao.png" alt="Staff 2">
         <div class="staff-info">
           <h4>Dr. Khanderao Gavali</h4>
           <p>Senior Faculty</p>
@@ -329,7 +345,7 @@ Trekking & Rope Climbing</h3>
         
       </div>
       <div class="staff-card">
-        <img src="/sandeep.png" alt="Staff 3">
+        <img src="./assets/sandeep.png" alt="Staff 3">
         <div class="staff-info">
           <h4>Mr. Sandeep Jagadale</h4>
           <p>Science Faculty</p>
@@ -356,7 +372,7 @@ Trekking & Rope Climbing</h3>
     <h2>SAINIK / NDA COACHING ADMISSIONS OPEN</h2>
     <p>Focused residential training for Sainik School, RMS, RIMC & NDA exams</p>
     <div class="underline"></div>
-    <a href="#" class="btn-join ">CONTACT NOW</a>
+    <a href="#" class="btn-join " onclick="window.location.href='contact.html'">CONTACT NOW</a>
   </div>
 </section>
 
@@ -371,7 +387,7 @@ Trekking & Rope Climbing</h3>
     <div class="news-content">
       <!-- Left main article -->
       <div class="main-news">
-        <img src="/SAINIK SCHOOL DR WADEKAR17.pdf-image-018.jpg" alt="Main News">
+        <img src="./assets/SAINIK SCHOOL DR WADEKAR17.pdf-image-018.jpg" alt="Main News">
         <div class="news-date">
           <i class="fa fa-calendar"></i> June 05, 2025 
         </div>
@@ -384,7 +400,7 @@ Trekking & Rope Climbing</h3>
       <!-- Right smaller articles -->
       <div class="side-news">
         <div class="news-item">
-          <img src="/trekking.jpg" alt="News 1">
+          <img src="./assets/trekking.jpg" alt="News 1">
           <div class="news-text">
             <h4>SSPI Conducts Trekking & Rope-Climbing Activity</h4>
             <span class="date">June 15, 2025</span>
@@ -393,7 +409,7 @@ Trekking & Rope Climbing</h3>
         </div>
 
         <div class="news-item">
-          <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg" alt="News 2">
+          <img src="./assets/scholarship.jpeg" alt="News 2">
           <div class="news-text">
             <h4>Scholarship Exam Results Declared</h4>
             <span class="date">May 28, 2025</span>
@@ -425,7 +441,7 @@ Trekking & Rope Climbing</h3>
     <div class="products-grid">
       <!-- Product 1 -->
       <div class="product-card">
-        <img src="sarthak.jpg" alt="Book Package" />
+        <img src="./assets/sarthak.jpg" alt="Book Package" />
         <h3>Sarthak Kharade</h3>
         <p>Joined Sainik School Satara
         Cleared entrance exam</p>
@@ -434,7 +450,7 @@ Trekking & Rope Climbing</h3>
 
       <!-- Product 2 -->
       <div class="product-card">
-        <img src="viraj.jpeg" height="70px" alt="Tablet" />
+        <img src="./assets/viraj.jpeg" height="70px" alt="Tablet" />
         <h3>Ayush Sharma</h3>
         <p >Cleared RIMC Exam
         Top scorer in written test</p>
@@ -443,7 +459,7 @@ Trekking & Rope Climbing</h3>
 
       <!-- Product 3 -->
       <div class="product-card">
-        <img src="viraj1.jpeg" alt="Bag" />
+        <img src="./assets/viraj1.jpeg" alt="Bag" />
         <h3>Viraj Vairat</h3>
         <p >Cleared NDA Exam
         Became a recommended candidate</p>
@@ -452,7 +468,7 @@ Trekking & Rope Climbing</h3>
 
       <!-- Product 4 -->
       <div class="product-card">
-        <img src="parth.jpg" alt="Camera" />
+        <img src="./assets/parth.jpg" alt="Camera" />
         <h3>Parth Namdeo</h3>
         <p >Merit List
         Sainik School Satara</p>
@@ -462,9 +478,9 @@ Trekking & Rope Climbing</h3>
   </div>
 </section>
 
-<button class="btn-cart viewall" style="border-color: none;">VIEW ALL</button>
+<button class="btn-cart viewall" style="border-color: none;" onclick="window.location.href='index.html'">VIEW ALL</button>
 
-<section class="testimonials-section" style=" background-image: url('/transparent.png');,background-repeat: no-repeat; padding:80px;">
+<section class="testimonials-section" style=" background-image: url('./assets/transparent.png');background-repeat: no-repeat; padding:80px;">
   <div class="container" style="text-align: center; color: #fff;">
     <h2 style="font-size: 32px; font-weight: bold;">WHAT OUR STUDENTS SAYS</h2>
     <p style="margin-top: 10px; font-size: 16px;">
@@ -478,7 +494,7 @@ Trekking & Rope Climbing</h3>
         <!-- Testimonial 1 -->
         <div class="swiper-slide">
           <div class="testimonial-box">
-            <img src="/sarthak.jpg" class="testimonial-img" />
+            <img src="./assets/sarthak.jpg" class="testimonial-img" />
             <div>
               <i class="quote-icon">❝</i>
               <h3> Sarthak Kharade</h3>
@@ -493,7 +509,7 @@ Trekking & Rope Climbing</h3>
         <!-- Testimonial 2 -->
         <div class="swiper-slide">
           <div class="testimonial-box">
-            <img src="/viraj.jpg" class="testimonial-img" />
+            <img src="./assets/viraj.jpg" class="testimonial-img" />
             <div>
               <i class="quote-icon">❝</i>
               <h3>Ayush Sharma</h3>
@@ -508,7 +524,7 @@ Trekking & Rope Climbing</h3>
         <!-- Testimonial 3 -->
         <div class="swiper-slide">
           <div class="testimonial-box">
-            <img src="/viraj1.jpeg" class="testimonial-img" />
+            <img src="./assets/viraj1.jpeg" class="testimonial-img" />
             <div>
               <i class="quote-icon">❝</i>
               <h3> Viraj Vairat</h3>
@@ -523,7 +539,7 @@ Trekking & Rope Climbing</h3>
         <!-- Testimonial 4 -->
         <div class="swiper-slide">
           <div class="testimonial-box">
-            <img src="/parth.jpg" class="testimonial-img" />
+            <img src="./assets/parth.jpg" class="testimonial-img" />
             <div>
               <i class="quote-icon">❝</i>
               <h3>Parth Namdeo</h3>
@@ -538,7 +554,7 @@ Trekking & Rope Climbing</h3>
         <!-- Testimonial 5 -->
         <div class="swiper-slide">
           <div class="testimonial-box">
-            <img src="/ayush.webp" class="testimonial-img" />
+            <img src="./assets/ayush.webp" class="testimonial-img" />
             <div>
               <i class="quote-icon">❝</i>
               <h3>Sparsh Wadekar</h3>
@@ -618,7 +634,7 @@ Ahire Gate,NDA Road, Pune-23</p>
   <!-- Main Footer Content -->
   <div class="footer-content">
     <div class="footer-column about">
-      <div class="logo"><img src="/ChatGPT Image Jul 16, 2025, 11_11_29 AM.png" width="120px" height="120px"></div>
+      <div class="logo"><img src="./assets/ChatGPT Image Jul 16, 2025, 11_11_29 AM.png" width="120px" height="120px"></div>
       <!--<div class="logo"><i class="fas fa-graduation-cap"></i> <span>Edulearn.</span></div>-->
       <p>SSPI Pune - Gateway to Army Careers
       Empowering Young Minds for Defence Careers</p>
